@@ -185,7 +185,13 @@ R$${item.price}
 function checkRestaurantOpen() {
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 10 && hora < 14;
+    const dia = data.getDay();
+    
+    // Verifica se é sexta-feira (5) ou sábado (6)
+    const isFridayOrSaturday = dia === 5 || dia === 6;
+
+    // Verifica se está dentro do horário de funcionamento e se é sexta-feira ou sábado
+    return isFridayOrSaturday && hora >= 10 && hora < 14;
 }
 
 const spanItem = document.getElementById("date-span");
