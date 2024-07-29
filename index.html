@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+
+    <title>TO.FISH - Cardápio Online</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="w-full h-[420px] bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/Img-bg-blue.png" alt="Logo DevBurger"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">TO.FISH</h1>
+
+            <span class="text-white font-medium">São José do Rio Preto - SP</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Sex e Sab - 10:30 as 14:00 horas.</span>
+            </div>
+
+        </div>
+    </header>
+    <!--FIM DO HEADER-->
+
+    <!--MENU-->
+    <H2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nossos Menu
+    </H2>
+
+    <div id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img src="./assets/ocean-roll.jpg" alt="Ocean Roll"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+
+                <div>
+                    <p class="font-bold">Ocean Roll</p>
+                    <p class="text-sm">Seu Sushi suas Regras! Monte seu Ocean Roll com suas combinações favoritas.
+                        Acompanha
+                        Tarê e Shoyu.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 25,00</p>
+                        <button class="bg-orange-600 px-5 rounded add-to-cart-btn" data-name="Ocean Roll"
+                            data-price="25">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM DO PRODUTO-->
+
+            <!--PRODUTO ITEM 2-->
+            <div class="flex gap-2">
+                <img src="./assets/sea.jpeg" alt="Sea Classico"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+
+                <div>
+                    <p class="font-bold">Sea Classico</p>
+                    <p class="text-sm">Arroz Japonês, Alga Nori, filé de salmão, cream cheese e cebolinha. Empanado em
+                        farinha Panko e frito. Acompanha: Tarê e Shoyu.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 27,90</p>
+                        <button class="bg-orange-600 px-5 rounded add-to-cart-btn" data-name="Sea Classico"
+                            data-price="27.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM DO PRODUTO-->
+
+            <!--PRODUTO ITEM 3-->
+            <div class="flex gap-2">
+                <img src="./assets/sea.jpeg" alt="Sea Hot"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+
+                <div>
+                    <p class="font-bold">Sea Hot</p>
+                    <p class="text-sm">Arroz Japonês, Alga Nori, Tilápia Crock, cream cheese, e Couve Crispy. Empanado
+                        em farinha Panko e frito. Acompanha: Tarê e Shoyu.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 23,90</p>
+                        <button class="bg-orange-600 px-5 rounded add-to-cart-btn" data-name="Sea Hot"
+                            data-price="23.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM DO PRODUTO-->
+
+            <!--PRODUTO ITEM 4-->
+            <div class="flex gap-2">
+                <img src="./assets/dog-salmon.jpg" alt="Big Salmon"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+
+                <div>
+                    <p class="font-bold">Big Salmon</p>
+                    <p class="text-sm">Arroz japonês, cream cheese, envoltos por alga Nori, empanado em farinha panko e
+                        frito. Salmão em cubos + cream cheese, cebola crispy, geleia de pimenta, finalizado com</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 44,90</p>
+                        <button class="bg-orange-600 px-5 rounded add-to-cart-btn" data-name="Big Salmon"
+                            data-price="44.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM DO PRODUTO-->
+
+            <!--PRODUTO ITEM 5-->
+            <div class="flex gap-2">
+                <img src="./assets/dog-tilapia.jpg" alt="Big Tilapia"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+
+                <div>
+                    <p class="font-bold">Big Tilapia</p>
+                    <p class="text-sm">Arroz japonês, cream cheese, envoltos por alga Nori, empanado em farinha panko e
+                        frito. Tilápia gralhada + cream cheese, pedaços de Tilápia Crock e couve crispy.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 39,90</p>
+                        <button class="bg-orange-600 px-5 rounded add-to-cart-btn" data-name="Big Tilapia"
+                            data-price="39.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM DO PRODUTO-->
+
+            <!--PRODUTO ITEM 6-->
+            <div class="flex gap-2">
+                <img src="./assets/burger.jpeg" alt="Salmon Burger"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+
+                <div>
+                    <p class="font-bold">Salmon Burger</p>
+                    <p class="text-sm">Salmão fresquinho em cubos, muitoooo cream cheese, cebolinha e couve Crispy.
+                        (Acompanha sachê de Shoyu e tarê).</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 35,00</p>
+                        <button class="bg-orange-600 px-5 rounded add-to-cart-btn" data-name="Salmon Burger"
+                            data-price="35">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM DO PRODUTO-->
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2 flex items-center justify-center mb-10">
+            <h2 class="font-bold text-3xl">
+                Bebidas
+            </h2>
+        </div>
+
+        <!-- Grid Bebidas-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 mt-4">
+            <!--REFRIGERANTE ITEM-->
+            <div class="flex gap-2">
+                <img src="./assets/refri-2.svg" alt="Guaraná"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+
+                <div class="w-full">
+                    <p class="font-bold">Guaraná Antarctica 350ml</p>
+                    <p class="text-sm"></p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 7,00</p>
+                        <button class="bg-orange-600 px-5 rounded add-to-cart-btn" data-name="Guaraná" data-price="7">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM DO PRODUTO-->
+
+            <!--REFRIGERANTE ITEM 2-->
+            <div class="flex gap-2">
+                <img src="./assets/refri-1 (1).svg" alt="Coca-Cola"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+
+                <div class="w-full">
+                    <p class="font-bold">Coca Cola 350ml</p>
+                    <p class="text-sm"></p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 7,00</p>
+                        <button class="bg-orange-600 px-5 rounded add-to-cart-btn" data-name="Coca-Cola" data-price="7">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM DO PRODUTO-->
+
+        </div>
+
+        <!-- Fim do Grid Bebidas-->
+
+        <div class="mx-auto max-w-7xl px-2 my-2 flex items-center justify-center mb-10">
+            <h2 class="font-bold text-3xl">
+                Sobremesas
+            </h2>
+        </div>
+
+        <!-- Grid Sobremesa-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 mt-4">
+            <!--Sobremesa ITEM-->
+            <div class="flex gap-2">
+                <img src="./assets/sobremesa.jpeg" alt="Sobremesa Kinder Bueno"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+
+                <div class="w-full">
+                    <p class="font-bold">Bolo Kinder Bueno</p>
+                    <p class="text-sm"></p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 15,00</p>
+                        <button class="bg-orange-600 px-5 rounded add-to-cart-btn" data-name="Bolo Kinder Bueno"
+                            data-price="15">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM DO PRODUTO-->
+
+            <!--Sobremesa ITEM 2-->
+            <div class="flex gap-2">
+                <img src="./assets/sobremesa.jpeg" alt="Bolo Biz Branco"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+
+                <div class="w-full">
+                    <p class="font-bold">Bolo Biz Branco</p>
+                    <p class="text-sm"></p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 12,00</p>
+                        <button class="bg-orange-600 px-5 rounded add-to-cart-btn" data-name="Bolo Biz Branco"
+                            data-price="12">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM DO PRODUTO-->
+
+        </div>
+
+        <!-- Fim do Grid Sobremesas-->
+
+    </div>
+    <!--FIM DO MENU-->
+
+    <!--MODAL CART-->
+    <div class="bg-black/65 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[60%] md:min-w-[600px] ">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+            <div id="cart-item" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Observações:</p>
+            <input type="text" placeholder="Digite os complementos ou uma observação..." id="observation"
+                class="w-full border-2 p-1 rounded my-1" />
+            <p class="font-bold mt-4">Endereço de entrega:</p>
+            <input type="text" placeholder="Digite seu endereço completo..." id="adress"
+                class="w-full border-2 p-1 rounded my-1" />
+            <p class="text-red-500 hidden" id="adress-warn">Digite seu endereço Completo</p>
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="chekout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            </div>
+
+        </div>
+    </div>
+    <!--FIM DO MODAL CART-->
+
+    <!--BUTTON FOOTER-->
+    <footer class="w-full bg-orange-600 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Meu Carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+
+    <!--FIM DO BUTTON FOOTER-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
