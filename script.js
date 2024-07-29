@@ -185,7 +185,7 @@ R$${item.price}
 function checkRestaurantOpen() {
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 10 && hora < 17;
+    return hora >= 10 && hora < 14;
 }
 
 const spanItem = document.getElementById("date-span");
